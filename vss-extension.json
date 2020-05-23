@@ -40,6 +40,9 @@
     "links": {
         "license": {
             "uri": "https://github.com/flcdrg/ChocolateyToolInstaller-AzureDevOps/blob/master/LICENSE"
+        }, 
+        "support": {
+            "uri": "https://github.com/flcdrg/ChocolateyToolInstaller-AzureDevOps/issues"
         }
     },
     "repository": {
