@@ -4,7 +4,7 @@
   "description": "Azure DevOps task for installing Chocolatey",
   "main": "index.js",
   "author": "David Gardiner <david@gardiner.net.au>",
-  "license": "MIT",
+  "license": "Apache",
   "scripts": {
     "tfx-create": "tfx extension create --manifest-globs vss-extension.json",
     "tfx-publish": "tfx extension publish --manifest-globs vss-extension.json --share-with gardiner"
