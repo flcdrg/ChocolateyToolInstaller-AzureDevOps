@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "chocolatey-tool-installer-task",
     "name": "Chocolatey Installer",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "publisher": "DavidGardiner",
     "targets": [
         {
