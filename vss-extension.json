@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "chocolatey-tool-installer-task",
     "name": "Chocolatey Installer",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "DavidGardiner",
     "targets": [
         {
@@ -36,5 +36,15 @@
     "tags": [
         "chocolatey",
         "installer"
-    ]
+    ],
+    "links": {
+        "license": {
+            "uri": "https://github.com/flcdrg/ChocolateyToolInstaller-AzureDevOps/blob/master/LICENSE"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/flcdrg/ChocolateyToolInstaller-AzureDevOps"
+      }
+    }
 }
