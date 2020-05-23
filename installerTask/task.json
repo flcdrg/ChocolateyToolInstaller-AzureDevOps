@@ -11,13 +11,24 @@
         "Agent.OS -equals Windows"    
     ],
     "version": {
-        "Major": 0,
-        "Minor": 2,
+        "Major": 1,
+        "Minor": 0,
         "Patch": 0
     },
+    "inputs": [
+        {
+            "name": "force",
+            "type": "boolean",
+            "defaultValue": false,
+            "required": false,
+            "label": "Force install",
+            "helpMarkDown": "Set if you want to force installing Chocolatey"
+
+        }
+    ],
     "instanceNameFormat": "Use Chocolatey",
     "execution": {
-        "PowerShell": {
+        "PowerShell3": {
             "platforms": ["windows"],
             "target": ".\\installer.ps1"
         }
