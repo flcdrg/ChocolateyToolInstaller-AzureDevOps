@@ -12,13 +12,14 @@
     ],
     "version": {
         "Major": 0,
-        "Minor": 1,
+        "Minor": 2,
         "Patch": 0
     },
     "instanceNameFormat": "Use Chocolatey",
     "execution": {
-        "Node10": {
-            "target": "index.js"
+        "PowerShell": {
+            "platforms": ["windows"],
+            "target": ".\\installer.ps1"
         }
     }
 }

@@ -1,11 +1,6 @@
-import * as toolLib from 'azure-pipelines-tool-lib/tool';
-import tl = require('azure-pipelines-task-lib/task');
-import tr = require('azure-pipelines-task-lib/toolrunner');
-import path = require('path');
 import fs from 'fs';
 
 export async function getChocolatey(): Promise<string> {
-    let toolPath: string;
 
     try {
         fs.accessSync('c:/ProgramData/Chocolatey/bin/choco.exe', fs.constants.F_OK);
