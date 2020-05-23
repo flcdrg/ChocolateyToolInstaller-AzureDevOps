@@ -45,6 +45,5 @@
     "repository": {
         "type": "git",
         "uri": "https://github.com/flcdrg/ChocolateyToolInstaller-AzureDevOps"
-      }
     }
 }
