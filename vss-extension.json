@@ -2,8 +2,9 @@
     "manifestVersion": 1,
     "id": "chocolatey-tool-installer-task",
     "name": "Chocolatey Installer",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "DavidGardiner",
+    "public": true,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
