@@ -13,7 +13,7 @@ $chocoExe = "$chocoInstallLocation\choco.exe"
 $doInstall = $false
 
 if (Test-Path $chocoExe) {
-    Write-Output "choco.exe found already installed"
+    Write-Output "choco.exe is already installed."
 } else {
     $doInstall = $true
 }
@@ -21,6 +21,12 @@ if (Test-Path $chocoExe) {
 [bool]$force = Get-VstsInput -Name 'force' -AsBool -Default $false
 
 if ($doInstall -or $force) {
+    if ($force) {
+        Write-Output "'Force' option specified"
+    }
+
+    Write-Output "Installing Chocolatey - this may take a few minutes"
+
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
 
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
