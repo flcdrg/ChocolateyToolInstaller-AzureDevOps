@@ -3,26 +3,19 @@
     "id": "1dc7ea30-2588-4837-9c45-f731e537d175",
     "name": "ChocolateyToolInstaller",
     "friendlyName": "Chocolatey tool installer",
-    "description": "Acquires the latest version of Chocolatey from the internet and adds it to the PATH (if not already installed)",
+    "description": "Acquires the latest version of Chocolatey from the internet and adds it to the PATH (if not already installed)\nThis task only works on Windows agents",
     "helpMarkDown": "",
-    "category": "Utility",
+    "category": "Azure Pipelines",
     "author": "David Gardiner",
+    "demands": [       
+        "Agent.OS -equals Windows"    
+    ],
     "version": {
         "Major": 0,
         "Minor": 1,
         "Patch": 0
     },
     "instanceNameFormat": "Use Chocolatey",
-    // "inputs": [
-    //     {
-    //         "name": "samplestring",
-    //         "type": "string",
-    //         "label": "Sample String",
-    //         "defaultValue": "",
-    //         "required": true,
-    //         "helpMarkDown": "A sample string"
-    //     }
-    // ],
     "execution": {
         "Node10": {
             "target": "index.js"

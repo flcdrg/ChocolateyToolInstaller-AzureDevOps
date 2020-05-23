@@ -36,24 +36,22 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var tl = require("azure-pipelines-task-lib/task");
-function run() {
+exports.getChocolatey = void 0;
+var fs = require("fs");
+function getChocolatey() {
     return __awaiter(this, void 0, void 0, function () {
-        var inputString;
+        var toolPath;
         return __generator(this, function (_a) {
-            try {
-                inputString = tl.getInput('samplestring', true);
-                if (inputString == 'bad') {
-                    tl.setResult(tl.TaskResult.Failed, 'Bad input was given');
-                    return [2 /*return*/];
+            fs.access('c:/ProgramData/Chocolatey/bin/choco.exe', fs.constants.F_OK, function (err) {
+                if (err) {
+                    console.log('not found');
                 }
-                console.log('Hello', inputString);
-            }
-            catch (err) {
-                tl.setResult(tl.TaskResult.Failed, err.message);
-            }
-            return [2 /*return*/];
+                else {
+                    console.log('found');
+                }
+            });
+            return [2 /*return*/, ''];
         });
     });
 }
-run();
+exports.getChocolatey = getChocolatey;
