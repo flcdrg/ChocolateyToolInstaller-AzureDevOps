@@ -1,0 +1,16 @@
+{
+  "name": "ChocolateyToolInstaller-AzureDevOps",
+  "version": "1.0.0",
+  "description": "Azure DevOps task for installing Chocolatey",
+  "main": "index.js",
+  "author": "David Gardiner <david@gardiner.net.au>",
+  "license": "MIT",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "@types/q": "^1.5.4",
+    "typescript": "^3.9.3"
+  }
+}
