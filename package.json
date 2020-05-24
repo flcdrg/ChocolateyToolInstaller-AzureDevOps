@@ -7,7 +7,7 @@
   "license": "Apache",
   "scripts": {
     "tfx-create": "tfx extension create --manifest-globs vss-extension.json",
-    "tfx-publish": "tfx extension publish --manifest-globs vss-extension.json --share-with gardiner"
+    "tfx-publish": "tfx extension publish --manifest-globs vss-extension.json"
   },
   "devDependencies": {
 
