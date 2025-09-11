@@ -1296,10 +1296,10 @@ tar-stream@^1.5.0:
     to-buffer "^1.1.1"
     xtend "^4.0.0"
 
-tfx-cli@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/tfx-cli/-/tfx-cli-0.22.0.tgz#822f07b2fe0c6e13b3623288725b1f315f05fcf5"
-  integrity sha512-DAG4fSWf4rkvCxJyt1Ph/EQbOL9RdBEESvtjz2y1GWhSgBTFSv2ak/N9rfeq7OHOdJWjaL6QleAtpGhu35UJig==
+tfx-cli@^0.22.1:
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/tfx-cli/-/tfx-cli-0.22.1.tgz#3583b4f2b309ee9474680390caa39c85b5a8bbf3"
+  integrity sha512-LhKzq0HJ7/kznsoCsoX+wqeYzHCfS0RuBMT4g6/pEZ+cPPZZIKC55Nh+0XwjaruVVoMuuK5BrNk2QHS6gDfk5Q==
   dependencies:
     app-root-path "1.0.0"
     archiver "2.0.3"
